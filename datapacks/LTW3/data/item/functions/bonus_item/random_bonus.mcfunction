@@ -1,4 +1,4 @@
-#as player
+# as player
 setblock 0 0 1 shulker_box replace
 data modify storage item:bonus random_bonus set from storage item:bonus item.tag.bonus_random_bonus[0]
 data remove storage item:bonus item.tag.bonus_random_bonus[0]

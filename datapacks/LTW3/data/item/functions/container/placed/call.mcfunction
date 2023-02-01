@@ -1,4 +1,4 @@
-#as player
+# as player
 #trigger by advancement
 advancement revoke @s only item:container/place
 scoreboard players set #container.got mem 0

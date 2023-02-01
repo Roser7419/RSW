@@ -1,4 +1,4 @@
-#as item
+# as item
 tp @s @a[tag=item_op,limit=1]
 tag @s add bonus_old
 data modify entity @s Owner set from entity @a[tag=item_op,limit=1] UUID

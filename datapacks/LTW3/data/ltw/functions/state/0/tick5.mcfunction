@@ -9,6 +9,9 @@ execute as @a[team=!debugging,team=!playing,team=!watching] run function ltw:sta
 # 隐藏/显示老板的名片
 execute as @e[type=piglin,tag=shop_piglin_11,tag=lobby_entity] at @s if entity @a[distance=..5] run data modify entity @s CustomNameVisible set value true
 execute as @e[type=piglin,tag=shop_piglin_11,tag=lobby_entity] at @s unless entity @a[distance=..5] run data modify entity @s CustomNameVisible set value false
+execute as @e[type=piglin,tag=shop_piglin_12,tag=lobby_entity] at @s if entity @a[distance=..5] run data modify entity @s CustomNameVisible set value true
+execute as @e[type=piglin,tag=shop_piglin_12,tag=lobby_entity] at @s unless entity @a[distance=..5] run data modify entity @s CustomNameVisible set value false
+
 
 # ————————————————————————————————————————————————————————————————————————————
 # 游戏准备检查部分

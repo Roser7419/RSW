@@ -1,4 +1,3 @@
-
 # 丢骰子
 scoreboard players set $random_min mem 1
 scoreboard players set $random_max mem 20

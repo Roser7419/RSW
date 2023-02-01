@@ -21,6 +21,9 @@ execute unless entity @e[type=armor_stand,tag=show_particle_5,tag=lobby_entity] 
 execute unless entity @e[type=piglin,tag=shop_piglin_11,tag=lobby_entity] run kill @e[type=minecart,tag=lobby_entity]
 execute unless entity @e[type=minecart,tag=lobby_entity] run kill @e[type=piglin,tag=lobby_entity,tag=shop_piglin_11]
 execute unless entity @e[type=piglin,tag=shop_piglin_11,tag=lobby_entity] run summon minecart 4 28 -47 {Rotation:[0.0f,0.0f],Tags:["lobby_entity"],Passengers:[{id:"minecraft:piglin",Rotation:[90.0f,0.0f],Tags:["lobby_entity","shop_piglin_11"],CustomName:'{"text":"神秘老板"}',ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,IsImmuneToZombification:1b,CannotHunt:1b,HandItems:[{id:"gold_block",Count:1b},{}],HandDropChances:[0.0f,0.0f]}]}
+execute unless entity @e[type=piglin,tag=shop_piglin_12,tag=lobby_entity] run kill @e[type=minecart,tag=lobby_entity,tag=dice_100]
+execute unless entity @e[type=minecart,tag=lobby_entity,tag=dice_100] run kill @e[type=piglin,tag=lobby_entity,tag=shop_piglin_12]
+execute unless entity @e[type=piglin,tag=shop_piglin_12,tag=lobby_entity] run summon minecart -2 32 -35 {Rotation:[90.0f,0.0f],Tags:["lobby_entity"],Passengers:[{id:"minecraft:piglin",Rotation:[180.0f,0.0f],Tags:["lobby_entity","shop_piglin_12"],CustomName:'{"text":"超寄无敌神秘老板"}',ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],PersistenceRequired:1b,IsImmuneToZombification:1b,CannotHunt:1b,HandItems:[{id:"crying_obsidian",Count:1b},{}],HandDropChances:[0.0f,0.0f]}]}
 
 # 召唤显示测试实体
 execute unless entity @e[tag=visual_1,tag=lobby_entity] run summon armor_stand 0 300.25 -49.75 {Tags:["lobby_entity","visual_1"],DisabledSlots:7967,ArmorItems:[{},{},{},{id:"snowball",Count:1}],Invisible:1b,Small:1b,NoGravity:1b,Marker:1b,Team:"orange_test",Glowing:1b}

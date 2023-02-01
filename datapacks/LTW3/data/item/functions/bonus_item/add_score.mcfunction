@@ -1,4 +1,4 @@
-#as player
+# as player
 execute store result score #bonus_add_score mem run data get storage item:bonus item.tag.bonus_add_score
 
 # 正常的加分

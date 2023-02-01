@@ -1,4 +1,4 @@
-#as player
+# as player
 scoreboard players remove $item.random.count mem 1
 execute if data storage item:bonus random_bonus{level:"white"} run loot replace block 0 0 1 container.0 loot item:mixed/white
 execute if data storage item:bonus random_bonus{level:"green"} run loot replace block 0 0 1 container.0 loot item:mixed/green

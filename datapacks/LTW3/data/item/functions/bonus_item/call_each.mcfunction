@@ -27,10 +27,10 @@ execute if data storage item:bonus item.tag.bonus_give_items[0] run function ite
 # 如果有 random_bonus 标签则返还随机物品
 execute if data storage item:bonus item.tag.bonus_random_bonus[0] run function item:bonus_item/random_bonus
 
-# 如果有 random_bonus 标签则偷分
+# 如果有 stole_score 标签则偷分
 execute if data storage item:bonus item.tag.bonus_stole_score run function item:bonus_item/stole_score
 
-# 如果有 random_bonus 标签则给予金粒
+# 如果有 gold 标签则给予金粒
 execute if data storage item:bonus item.tag.bonus_gold run function item:bonus_item/gold
 
 # 执行特定函数

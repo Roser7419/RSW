@@ -5,6 +5,7 @@ scoreboard players add @s gold_total 0
 clear @s gold_block
 clear @s gold_ingot
 clear @s gold_nugget
+clear @s paper
 
 # 获取金块数，存于 temp
 scoreboard players operation @s temp = @s gold

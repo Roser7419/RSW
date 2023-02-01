@@ -1,4 +1,4 @@
-#as player
+# as player
 setblock 0 0 0 jukebox replace
 data modify block 0 0 0 RecordItem set from storage item:bonus item.tag.bonus_give_items[0]
 setblock 0 0 0 air destroy

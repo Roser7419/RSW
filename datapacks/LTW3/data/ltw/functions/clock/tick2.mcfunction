@@ -1,4 +1,4 @@
-# 每秒执行一次
+# 每 0.1s 执行一次
 schedule function ltw:clock/tick2 2t replace
 
 # 死亡触发

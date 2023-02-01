@@ -1,4 +1,3 @@
-
 scoreboard players remove @a music_time 1
 stopsound @a[scores={music_time=..0}] music
 
