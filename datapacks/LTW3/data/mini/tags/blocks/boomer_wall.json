@@ -1,0 +1,12 @@
+{
+    "values": [
+        "minecraft:structure_block",
+        "minecraft:bedrock",
+        "minecraft:obsidian",
+        "minecraft:crying_obsidian",
+        "minecraft:ancient_debris",
+        "minecraft:magma_block",
+        "minecraft:netherite_block",
+        "minecraft:barrier"
+    ]
+}

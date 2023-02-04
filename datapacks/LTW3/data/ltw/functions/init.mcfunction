@@ -82,7 +82,7 @@ scoreboard objectives add stat_adv dummy "完成的进度数"
 scoreboard objectives add stat_adv_challenge dummy "完成的挑战进度数"
 
 # 常量与变量初始化
-scoreboard players set #mini_total mem 5
+scoreboard players set #mini_total mem 6
 scoreboard players set #-1 mem -1
 scoreboard players set #0 mem 0
 scoreboard players set #1 mem 1

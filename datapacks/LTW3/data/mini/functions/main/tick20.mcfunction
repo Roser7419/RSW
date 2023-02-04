@@ -5,6 +5,7 @@ execute if score $mini_type mem matches 2 run function mini:tntrun/tick20
 execute if score $mini_type mem matches 3 run function mini:hotpm/tick20
 execute if score $mini_type mem matches 4 run function mini:colormatch/tick20
 execute if score $mini_type mem matches 5 run function mini:phantom/tick20
+execute if score $mini_type mem matches 6 run function mini:boomer/tick20
 execute if score $mini_type mem matches 201 run function mini:ass/tick20
 execute if score $mini_type mem matches 101 run function mini:iron/tick20
 execute if score $mini_type mem matches 102 run function mini:trade/tick20
