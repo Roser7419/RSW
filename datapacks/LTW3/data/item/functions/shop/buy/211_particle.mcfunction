@@ -1,4 +1,4 @@
-# 特效 (10e)
+# 特效 (10e/t10)
 scoreboard players add @s shop_particle 0
 tag @s remove canbuy
 

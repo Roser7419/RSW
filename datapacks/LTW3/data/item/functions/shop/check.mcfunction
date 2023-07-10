@@ -1,9 +1,11 @@
 # 范围检测
 execute if score @s buy_trigger matches 001..099 at @s unless entity @s[x=-3,z=-63,y=6,dx=25,dy=6,dz=30] run function item:shop/error/piglin
 execute if score @s buy_trigger matches 100..199 at @s unless entity @s[x=1,z=-63,y=20,dx=5,dy=4,dz=6] run function item:shop/error/piglin
-execute if score @s buy_trigger matches 200..299 at @s unless entity @s[x=-22,z=-75,y=18,dx=10,dy=4,dz=5] run function item:shop/error/villager
+execute if score @s buy_trigger matches 200..299 at @s unless entity @s[x=-22,z=-75,y=14,dx=10,dy=9,dz=5] run function item:shop/error/villager
 execute if score @s buy_trigger matches 666..999 at @s unless entity @s[x=-3,z=-49,y=27,dx=5,dy=4,dz=5] run function item:shop/error/dice
 execute if score @s buy_trigger matches 1000..1024 at @s unless entity @s[x=-3,z=-42,y=32,dx=5,dy=4,dz=5] run function item:shop/error/dice
+execute if score @s buy_trigger matches 521 at @s unless entity @s[x=-22,z=-75,y=18,dx=10,dy=4,dz=5] run function item:shop/error/elevator
+execute if score @s buy_trigger matches 522 at @s unless entity @s[x=-22,z=-75,y=14,dx=10,dy=4,dz=5] run function item:shop/error/elevator
 
 # 普通商店
 execute if score @s buy_trigger matches 011 if score $state mem matches 0 run function item:shop/buy/011_bow
@@ -38,11 +40,20 @@ execute if score @s buy_trigger matches 212 if score $state mem matches 0 run fu
 execute if score @s buy_trigger matches 213 if score $state mem matches 0 run function item:shop/buy/213_particle
 execute if score @s buy_trigger matches 214 if score $state mem matches 0 run function item:shop/buy/214_particle
 execute if score @s buy_trigger matches 215 if score $state mem matches 0 run function item:shop/buy/215_particle
+execute if score @s buy_trigger matches 221 if score $state mem matches 0 run function item:shop/buy/221_particle
+execute if score @s buy_trigger matches 222 if score $state mem matches 0 run function item:shop/buy/222_particle
+execute if score @s buy_trigger matches 223 if score $state mem matches 0 run function item:shop/buy/223_particle
+execute if score @s buy_trigger matches 224 if score $state mem matches 0 run function item:shop/buy/224_particle
+execute if score @s buy_trigger matches 225 if score $state mem matches 0 run function item:shop/buy/225_particle
+# 交互用告示牌
+execute if score @s buy_trigger matches 521 if score $state mem matches 0 run function item:shop/buy/521_down
+execute if score @s buy_trigger matches 522 if score $state mem matches 0 run function item:shop/buy/522_up
 # 骰子房
 execute if score @s buy_trigger matches 999 if score $state mem matches 0 run function item:shop/buy/999_dice
 execute if score @s buy_trigger matches 1024 if score $state mem matches 0 run function item:shop/buy/1024_dice100
 # 彩蛋
 execute if score @s buy_trigger matches 114514 if score $state mem matches 0 run function item:shop/buy/easter_egg
+execute if score @s buy_trigger matches 7419 if score $state mem matches 0 run function item:shop/buy/7419_fantasy
 
 # 重置
 scoreboard players set @s buy_trigger 0
