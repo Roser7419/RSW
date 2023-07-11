@@ -1,5 +1,5 @@
 # 播放主大厅 BGM
-# 首次 3'51，循环 2'30
+# 首次 3'51, 循环 2'30
 
 function lib:sounds/music/stop
 scoreboard players set $music_id mem 1

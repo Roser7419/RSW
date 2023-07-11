@@ -19,7 +19,7 @@
       "hidden": false
     },
     "rewards": {
-      "function": "ltw:advancement/bonus_4"
+      "function": "ltw:advancement/bonus_2"
     },
     "criteria": {
       "a":{

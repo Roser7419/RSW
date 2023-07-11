@@ -1,4 +1,4 @@
-# 用 round_id 标记所有玩家以外的实体，并清除遗留实体
+# 用 round_id 标记所有玩家以外的实体, 并清除遗留实体
 
 scoreboard players add @e[type=!player,tag=!no_gc] round_id 0
 scoreboard players operation @e[type=!player,tag=!no_gc,scores={round_id=0}] round_id = $ round_id

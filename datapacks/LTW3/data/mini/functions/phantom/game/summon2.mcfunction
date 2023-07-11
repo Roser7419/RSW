@@ -9,7 +9,7 @@ function lib:random
 execute if score $random mem matches 1 run attribute @e[tag=new_phantom,limit=1] generic.max_health base set 2
 execute if score $random mem matches 2 run attribute @e[tag=new_phantom,limit=1] generic.max_health base set 5
 
-# 如果满足条件（在 tick20 中检查），则刷出奖励幻翼
+# 如果满足条件（在 tick20 中检查）, 则刷出奖励幻翼
 execute if score #new_item mem matches 0 run tellraw @a ["\n",{"text": ">> ","color":"red","bold": true},{"text": "击杀红色幻翼, 获取奖励物资！\n","color":"red"}]
 execute if score #new_item mem matches 0 run title @a times 1 80 3
 execute if score #new_item mem matches 0 run title @a title ""

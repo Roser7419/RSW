@@ -40,7 +40,7 @@ scoreboard players operation #start_div mem %= #4 mem
 execute if score #start_sec mem matches 1..10 if score #start_div mem matches 3 run execute as @a at @s run function lib:sounds/hit2
 
 # 20s：提示未准备
-execute if score #start_countdown mem matches 80 run tellraw @a[team=watching,tag=pass_setup] [{"text":"\n","color":"red"},{"text":">> ","bold": true},"请丢出最后一格的物品准备开始，否则将旁观下一局游戏！\n"]
+execute if score #start_countdown mem matches 80 run tellraw @a[team=watching,tag=pass_setup] [{"text":"\n","color":"red"},{"text":">> ","bold": true},"请丢出最后一格的物品准备开始, 否则将旁观下一局游戏！\n"]
 
 # 6s：提示玩家数量过多
 execute if score #start_countdown mem matches 24 if score $count mem matches 9.. run tellraw @a[tag=pass_setup] [{"text":"","color":"gold"},{"text":">> ","bold": true},"已超出游戏最多支持的 8 人人数上限, 将随机抽取 8 人开始游戏!"]

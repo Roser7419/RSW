@@ -1,4 +1,4 @@
-# 游戏结束，根据 total_score 判断排名，并返回主大厅
+# 游戏结束, 根据 total_score 判断排名, 并返回主大厅
 
 # 计算排名
 tag @a remove total_rank1
@@ -41,10 +41,13 @@ execute as @a[team=playing] run scoreboard players operation @s gold_total += @s
 tellraw @a[team=playing,scores={total_score=1..}] [" 你得到的 ",{"score":{"name": "*","objective": "total_score"},"color":"gold"},{"text": " 积分","color":"gold"}," 已转换为 ",{"score":{"name": "*","objective": "total_score"},"color":"gold"},{"text": " 金粒","color":"gold"},"！"]
 
 # 局中金粒
-tellraw @a[team=playing,scores={gold_extra=1..}] [" 在游戏过程中，你拿到了额外的 ",{"score":{"name": "*","objective": "gold_extra"},"color":"gold"},{"text": " 金粒","color":"gold"},"！"]
+tellraw @a[team=playing,scores={gold_extra=1..}] [" 在游戏过程中, 你拿到了额外的 ",{"score":{"name": "*","objective": "gold_extra"},"color":"gold"},{"text": " 金粒","color":"gold"},"！"]
 
 # 局中绿宝石
-tellraw @a[team=playing,scores={green_extra=1..}] [" 由于达成了进度，你得到了 ",{"score":{"name": "*","objective": "green_extra"},"color":"green"},{"text": " 绿宝石","color":"green"}," 完成奖励！"]
+tellraw @a[team=playing,scores={green_extra=1..}] [" 由于达成了进度, 你得到了 ",{"score":{"name": "*","objective": "green_extra"},"color":"green"},{"text": " 绿宝石","color":"green"}," 完成奖励！"]
+
+# 局中紫水晶
+tellraw @a[team=playing,scores={purple_extra=1..}] [" 以及, 你还有 ",{"score":{"name": "*","objective": "purple_extra"},"color":"light_purple"},{"text": " 紫水晶","color":"light_purple"}," 的困难进度完成奖励！"]
 
 # 如果因为掉线强制结束则无安慰奖
 execute store result score #count mem if entity @a[team=playing]
@@ -52,7 +55,11 @@ execute if score #count mem matches ..2 run tag @a remove total_rankl
 # 安慰奖
 execute as @a[tag=total_rankl] run scoreboard players add @s gold 5
 execute as @a[tag=total_rankl] run scoreboard players add @s gold_total 5
-tellraw @a[tag=total_rankl] [" 不要气馁，收下 ",{"text": "5 金粒","color":"gold"}," 奖励，继续加油吧！"]
+tellraw @a[tag=total_rankl] [" 不要气馁, 收下 ",{"text": "5 金粒","color":"gold"}," 奖励, 继续加油吧！"]
+# 名列前茅
+execute as @a[tag=total_rank1] run scoreboard players add @s purple 1
+execute as @a[tag=total_rank1] run scoreboard players add @s purple_total 1
+tellraw @a[tag=total_rank1] [" 作为冠军, 这里还有额外的 ",{"text": "1 紫水晶","color":"light_purple"}," 奖励, 继续保持哦！"]
 
 # 奖励结束
 tellraw @a[team=playing] ""

@@ -18,6 +18,7 @@ scoreboard players reset * total_score_disp
 scoreboard players set @a[team=playing] total_score_disp 0
 scoreboard players set @a gold_extra 0
 scoreboard players set @a green_extra 0
+scoreboard players set @a purple_extra 0
 scoreboard players set $round mem 1
 scoreboard players add $ game_id 1
 scoreboard players operation @a game_id = $ game_id

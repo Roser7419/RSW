@@ -92,7 +92,7 @@
         "functions": [
             {
                 "function": "minecraft:set_nbt",
-                "tag": "{display:{Name:'{\"text\":\"<多重射击，快速装填 IV> 弩\",\"italic\":false,\"color\":\"white\"}'},item_name:'{\"text\":\"<多重射击，快速装填 IV> 烟花弩\",\"color\":\"white\"}',Enchantments:[{id:\"quick_charge\",lvl:4},{id:\"multishot\",lvl:1}],is_bonus:1b,bonus_new:1b,bonus_return:1b,Charged:1b,ChargedProjectiles:[{id:\"firework_rocket\",Count:1,tag:{Fireworks:{Flight:3,Explosions:[{Colors:[I;16756224],Flicker:1b,Trail:0b,Type:0b}]}}}]}"
+                "tag": "{display:{Name:'{\"text\":\"<多重射击, 快速装填 IV> 弩\",\"italic\":false,\"color\":\"white\"}'},item_name:'{\"text\":\"<多重射击, 快速装填 IV> 烟花弩\",\"color\":\"white\"}',Enchantments:[{id:\"quick_charge\",lvl:4},{id:\"multishot\",lvl:1}],is_bonus:1b,bonus_new:1b,bonus_return:1b,Charged:1b,ChargedProjectiles:[{id:\"firework_rocket\",Count:1,tag:{Fireworks:{Flight:3,Explosions:[{Colors:[I;16756224],Flicker:1b,Trail:0b,Type:0b}]}}}]}"
             }
         ]
     },

@@ -1,4 +1,4 @@
-# 要求系统进入状态 3（主要阶段结束，初始化小游戏）
+# 要求系统进入状态 3（主要阶段结束, 初始化小游戏）
 scoreboard players set $state mem 3
 execute as @a[team=!debugging] run function ltw:state/3/player_enter
 
@@ -24,14 +24,14 @@ team modify playing color reset
 # 清理奖励物资
 kill @e[tag=bonus_item]
 
-# 小游戏编号：生成一个 1~[最大游戏编号] 的 randomarray，每次从其中取下一个数。
+# 小游戏编号：生成一个 1~[最大游戏编号] 的 randomarray, 每次从其中取下一个数。
 execute unless data storage ltw:mini types[0] run function ltw:state/3/newarray
 execute store result score $mini_type mem run data get storage ltw:mini types[0]
 execute if score $round mem matches ..4 run data remove storage ltw:mini types[0]
 
 # 前置/后置小游戏
-# 如果为第 1 轮，则有一半概率选用刺客，一半概率不变
-# 如果为第 5 轮，则有一半概率选用钢铁，一半概率选用贸易
+# 如果为第 1 轮, 则有一半概率选用刺客, 一半概率不变
+# 如果为第 5 轮, 则有一半概率选用钢铁, 一半概率选用贸易
 scoreboard players set $random_max mem 1
 scoreboard players set $random_min mem 0
 function lib:random

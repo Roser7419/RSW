@@ -80,6 +80,7 @@ scoreboard objectives add stat_adv_3 dummy "完成的 γ 进度数"
 scoreboard objectives add stat_adv_4 dummy "完成的 Ω 进度数"
 scoreboard objectives add stat_adv dummy "完成的进度数"
 scoreboard objectives add stat_adv_challenge dummy "完成的挑战进度数"
+scoreboard objectives add rsw_rank dummy "RSW 等级"
 
 # 常量与变量初始化
 scoreboard players set #mini_total mem 6

@@ -23,7 +23,7 @@ execute positioned 1004.50 18.50 1043.50 run function item:bonus_item/gameparty/
 # 生成秘密宝藏
 execute as @e[tag=treasure_secret] at @s run function item:bonus_item/gameparty/auto/low3
 
-# 生成随机宝藏（4 奖励物品，6 秘密宝藏，15 随机宝藏）
+# 生成随机宝藏（4 奖励物品, 6 秘密宝藏, 15 随机宝藏）
 scoreboard players set #item_count mem 25
 execute as @e[tag=bonus_item,x=1000,y=0,z=1000,dx=100,dy=100,dz=100] run scoreboard players remove #item_count mem 1
 execute if score #item_count mem matches 1.. run function mini:parkour/game/generate_loop

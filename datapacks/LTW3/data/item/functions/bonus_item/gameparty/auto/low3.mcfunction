@@ -3,7 +3,7 @@
 # 金粒x1 86% 积分x1 07% 白色 07%
 # 若为第 1/2/3 局生成的是白色混合奖励 若为第 4/5 局生成的是白色分数奖励
 
-# 品质：生成一个 1~14 的 randomarray，每次从其中取下一个数
+# 品质：生成一个 1~14 的 randomarray, 每次从其中取下一个数
 execute unless data storage ltw:mini qualities[0] run function item:bonus_item/new_array
 execute store result score #quality mem run data get storage ltw:mini qualities[0]
 data remove storage ltw:mini qualities[0]

@@ -19,7 +19,7 @@
       "hidden": false
     },
     "rewards": {
-      "function": "ltw:advancement/bonus_4"
+      "function": "ltw:advancement/bonus_5"
     },
     "criteria": {
     "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_adv_challenge":{"min":1}},"condition":"entity_scores","entity":"this"}]}},

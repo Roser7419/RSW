@@ -35,6 +35,7 @@ tp @s[team=!debugging,tag=!pass_setup] 2.5 300.2 -52.5 0 0
 clear @s[team=!debugging]
 execute as @s[team=!debugging] run function item:shop/refresh_gold
 execute as @s[team=!debugging] run function item:shop/refresh_green
+execute as @s[team=!debugging] run function item:shop/refresh_purple
 
 # 默认进入待机状态
 function ltw:state/0/state/join_watch

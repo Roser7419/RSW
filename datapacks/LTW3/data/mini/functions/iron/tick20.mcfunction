@@ -7,7 +7,7 @@ execute if score $countdown mem matches ..10 run title @a title [""]
 execute if score $countdown mem matches ..10 as @a at @s run function lib:sounds/hit2
 
 # 180s：教学
-execute if score $countdown mem matches 180 run tellraw @a[team=playing,scores={green_total=..10}] [{"text":"\n>> ","color":"light_purple","bold": true},{"text":"提示：就算是为了小命，制作盾牌与武器也是很有必要的！","bold":false},"\n"]
+execute if score $countdown mem matches 180 run tellraw @a[team=playing,scores={green_total=..10}] [{"text":"\n>> ","color":"light_purple","bold": true},{"text":"提示：就算是为了小命, 制作盾牌与武器也是很有必要的！","bold":false},"\n"]
 
 # 120s：雷达提示
 execute if score $countdown mem matches 120 run title @a subtitle {"text":"⚠ 玩家雷达将在三十秒后开启！ ⚠","color":"yellow"}

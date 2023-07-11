@@ -18,7 +18,7 @@
       "hidden": false
     },
     "rewards": {
-      "function": "ltw:advancement/bonus_1"
+      "function": "ltw:advancement/rsw_3"
     },
     "criteria": {
       "a":{
