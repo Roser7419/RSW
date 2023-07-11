@@ -1,0 +1,26 @@
+{
+    "parent": "ltw:main/win6",
+    "display": {
+      "icon": {
+        "item": "minecraft:dragon_head"
+      },
+      "title": {
+        "text": "VII · 奇技依旧"
+      },
+      "description": [
+        {"text": "获得 200 场游戏的胜利\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 4 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "a": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":200}},"condition":"entity_scores","entity":"this"}]}}
+    }
+  }

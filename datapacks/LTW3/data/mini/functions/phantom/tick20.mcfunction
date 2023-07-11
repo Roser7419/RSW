@@ -3,10 +3,10 @@
 execute if score $countdown mem matches 60 run tellraw @a[team=playing,scores={green_total=..10}] [{"text":"\n>> ","color":"light_purple","bold": true},{"text":"提示：如果有近战武器，或许可以冲进幻翼群里直接近战……","bold":false},"\n"]
 
 # 给予进度
-execute as @a[team=playing,scores={temp=1..,kill_phantom=7..9}] run advancement grant @s only ltw:blood/phantom1
-execute as @a[team=playing,scores={temp=1..,kill_phantom=15..17}] run advancement grant @s only ltw:blood/phantom2
-execute as @a[team=playing,scores={temp=1..,kill_phantom=24..26}] run advancement grant @s only ltw:blood/phantom3
-execute as @a[team=playing,scores={temp=1..,kill_phantom=30..32}] run advancement grant @s only ltw:blood/phantom4
+execute as @a[team=playing,scores={temp=1..,kill_phantom=7..9}] run advancement grant @s only ltw:skilled/phantom1
+execute as @a[team=playing,scores={temp=1..,kill_phantom=15..17}] run advancement grant @s only ltw:skilled/phantom2
+execute as @a[team=playing,scores={temp=1..,kill_phantom=24..26}] run advancement grant @s only ltw:skilled/phantom3
+execute as @a[team=playing,scores={temp=1..,kill_phantom=30..32}] run advancement grant @s only ltw:skilled/phantom4
 
 # 判断是否符合刷出新物品的条件：0 为可以，其他为不可以
 scoreboard players set #new_item mem 0

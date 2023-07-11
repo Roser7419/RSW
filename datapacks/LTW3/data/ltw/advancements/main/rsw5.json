@@ -1,0 +1,29 @@
+{
+    "parent": "ltw:main/rsw4",
+    "display": {
+      "icon": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "title": {
+        "text": "V · 巅"
+      },
+      "description": [
+        {"text": "完成 V 列进度\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 5 紫水晶","color":"light_purple"}
+      ],
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_1"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:location","conditions": {"player":{"player":{"advancements":{
+            "ltw:main/score5":true,"ltw:main/win5":true,"ltw:main/challenger5":true}}}}
+      }
+    }
+  }

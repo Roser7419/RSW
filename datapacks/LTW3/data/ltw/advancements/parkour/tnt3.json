@@ -9,8 +9,9 @@
       },
       "description": [
         {"text": "【地陷圣坛】几乎清空最顶层的所有方块\n", "color":"gray"},
-        {"text": "奖励: ","color":"green"},
-        {"text": "2 绿宝石","color":"white"}
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 绿宝石","color":"green"},
+        {"text": " 1 紫水晶","color":"light_purple"}
       ],
       "frame": "challenge",
       "show_toast": true,

@@ -16,6 +16,8 @@ spreadplayers 1019.5 2020.5 3 3 false @s[team=playing,tag=!rejoining]
 
 # 清理 tag
 tag @s remove layer_bottom
+tag @s remove tnt2finished
+tag @s remove tnt3finished
 
 # 两秒后才开始 TNT 掉落
 tag @s remove tntrun_pc

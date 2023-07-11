@@ -1,0 +1,28 @@
+{
+    "parent": "ltw:skilled/colormatch3",
+    "display": {
+      "icon": {
+        "item": "minecraft:purple_glazed_terracotta"
+      },
+      "title": {
+        "text": "纷乱迷阵 · Ω "
+      },
+      "description": [
+        {"text": "【色彩迷阵】至少无伤完成 70 回合\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }

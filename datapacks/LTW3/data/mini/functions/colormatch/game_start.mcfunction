@@ -6,4 +6,5 @@ scoreboard players set $bossbar_type mem 0
 function lib:bossbar/show
 
 # 开始轮次
+scoreboard players reset #round mem
 function mini:colormatch/game/start_new_round

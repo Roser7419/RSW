@@ -1,0 +1,26 @@
+{
+    "parent": "ltw:main/challenger5",
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_pickaxe"
+      },
+      "title": {
+        "text": "VI · 宗师"
+      },
+      "description": [
+        {"text": "完成 24 项挑战进度\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+        "a": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_adv_challenge":{"min":24}},"condition":"entity_scores","entity":"this"}]}}
+    }
+}

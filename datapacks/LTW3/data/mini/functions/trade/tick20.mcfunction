@@ -49,7 +49,10 @@ execute as @a[team=playing] store result score @s temp2 run clear @s nether_star
 execute as @a[scores={temp2=1..}] at @s run function mini:trade/game/get_score
 
 # 给予进度
-execute as @a[team=playing] if score @s emerald matches 8.. run advancement grant @s only ltw:vs/emerald1
+execute as @a[team=playing] if score @s emerald matches 8.. run advancement grant @s only ltw:survival/emerald1
 execute as @e[tag=TradePlayer,tag=!adv3_checked] unless entity @s[nbt={Offers:{Recipes:[{sell:{id:"minecraft:emerald"},uses:0}]}}] run tag @s add adv3_achieved
-execute as @a[team=playing] if score @s player_id = @e[tag=TradePlayer,tag=adv3_achieved,tag=!adv3_checked,limit=1] player_id run advancement grant @s only ltw:vs/emerald3
+execute as @a[team=playing] if score @s player_id = @e[tag=TradePlayer,tag=adv3_achieved,tag=!adv3_checked,limit=1] player_id run advancement grant @s only ltw:survival/emerald3
 tag @e[tag=TradePlayer,tag=adv3_achieved,tag=!adv3_checked] add adv3_checked
+execute as @e[tag=TradePlayer,tag=!adv4_checked,tag=adv3_achieved] unless entity @s[nbt={Offers:{Recipes:[{sell:{id:"minecraft:nether_star"},uses:0}]}}] run tag @s add adv4_achieved
+execute as @a[team=playing] if score @s player_id = @e[tag=TradePlayer,tag=adv4_achieved,tag=!adv4_checked,limit=1] player_id run advancement grant @s only ltw:survival/emerald4
+tag @e[tag=TradePlayer,tag=adv4_achieved,tag=!adv4_checked] add adv4_checked

@@ -1,0 +1,29 @@
+{
+    "parent": "ltw:main/rsw6",
+    "display": {
+      "icon": {
+        "item": "minecraft:end_crystal"
+      },
+      "title": {
+        "text": "VII · 终"
+      },
+      "description": [
+        {"text": "完成 VII 列进度\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 7 紫水晶","color":"light_purple"}
+      ],
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_1"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:location","conditions": {"player":{"player":{"advancements":{
+            "ltw:main/score7":true,"ltw:main/win7":true,"ltw:main/challenger7":true}}}}
+      }
+    }
+  }

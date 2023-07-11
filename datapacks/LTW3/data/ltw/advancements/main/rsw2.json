@@ -1,0 +1,29 @@
+{
+    "parent": "ltw:main/rsw1",
+    "display": {
+      "icon": {
+        "item": "minecraft:medium_amethyst_bud"
+      },
+      "title": {
+        "text": "II · 继"
+      },
+      "description": [
+        {"text": "完成 II 列进度\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 3 紫水晶","color":"light_purple"}
+      ],
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_1"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:location","conditions": {"player":{"player":{"advancements":{
+            "ltw:main/score2":true,"ltw:main/win2":true,"ltw:main/challenger2":true}}}}
+      }
+    }
+  }

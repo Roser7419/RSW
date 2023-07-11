@@ -1,0 +1,29 @@
+{
+    "parent": "ltw:main/score4",
+    "display": {
+      "icon": {
+        "item": "minecraft:flower_banner_pattern"
+      },
+      "title": {
+        "text": "V · 尽入囊"
+      },
+      "description": [
+        {"text": "在单局游戏中达到 40 积分\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 3 绿宝石\n","color":"green"},
+        {"text": " 1 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }

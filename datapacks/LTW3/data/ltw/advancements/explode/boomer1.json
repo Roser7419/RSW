@@ -1,0 +1,28 @@
+{
+    "parent": "ltw:explode/root",
+    "display": {
+      "icon": {
+        "item": "minecraft:redstone"
+      },
+      "title": {
+        "text": "点燃引信 · α "
+      },
+      "description": [
+        {"text": "【爆裂纷争】在剩余至少 5 颗心时获胜\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 1 绿宝石","color":"green"}
+      ],
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_1"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,0 +1,28 @@
+{
+    "parent": "ltw:survival/emerald3",
+    "display": {
+      "icon": {
+        "item": "minecraft:villager_spawn_egg"
+      },
+      "title": {
+        "text": "商业奇迹 · Ω "
+      },
+      "description": [
+        {"text": "【贸易专家】完成除花费绿宝石外的所有其他交易\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }

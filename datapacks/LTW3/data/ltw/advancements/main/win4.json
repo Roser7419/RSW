@@ -1,0 +1,51 @@
+{
+    "parent": "ltw:main/win3",
+    "display": {
+      "icon": {
+        "item": "minecraft:player_head",
+        "nbt": "{SkullOwner:{Id:[I;-1301018821,531057793,-1125645457,1757920535],Properties:{textures:[{Value:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWUwZmVhZDczMjU3MWRiNWQ1MDQ4OGM1YjUwZDRkYTc5MTU5MDg2MWEyMTJkZTNhODI0ZTQ0MDE1YjdmM2NjOCJ9fX0}]}}}"
+      },
+      "title": {
+        "text": "IV · 炉火纯青"
+      },
+      "description": [
+        {"text": "获得 25 场游戏的胜利\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 绿宝石","color":"green"}
+      ],
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":1}},"condition":"entity_scores","entity":"this"}]}},
+      "02": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":2}},"condition":"entity_scores","entity":"this"}]}},
+      "03": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":3}},"condition":"entity_scores","entity":"this"}]}},
+      "04": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":4}},"condition":"entity_scores","entity":"this"}]}},
+      "05": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":5}},"condition":"entity_scores","entity":"this"}]}},
+      "06": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":6}},"condition":"entity_scores","entity":"this"}]}},
+      "07": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":7}},"condition":"entity_scores","entity":"this"}]}},
+      "08": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":8}},"condition":"entity_scores","entity":"this"}]}},
+      "09": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":9}},"condition":"entity_scores","entity":"this"}]}},
+      "10": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":10}},"condition":"entity_scores","entity":"this"}]}},
+      "11": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":11}},"condition":"entity_scores","entity":"this"}]}},
+      "12": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":12}},"condition":"entity_scores","entity":"this"}]}},
+      "13": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":13}},"condition":"entity_scores","entity":"this"}]}},
+      "14": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":14}},"condition":"entity_scores","entity":"this"}]}},
+      "15": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":15}},"condition":"entity_scores","entity":"this"}]}},
+      "16": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":16}},"condition":"entity_scores","entity":"this"}]}},
+      "17": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":17}},"condition":"entity_scores","entity":"this"}]}},
+      "18": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":18}},"condition":"entity_scores","entity":"this"}]}},
+      "19": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":19}},"condition":"entity_scores","entity":"this"}]}},
+      "20": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":20}},"condition":"entity_scores","entity":"this"}]}},
+      "21": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":21}},"condition":"entity_scores","entity":"this"}]}},
+      "22": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":22}},"condition":"entity_scores","entity":"this"}]}},
+      "23": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":23}},"condition":"entity_scores","entity":"this"}]}},
+      "24": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":24}},"condition":"entity_scores","entity":"this"}]}},
+      "25": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":25}},"condition":"entity_scores","entity":"this"}]}}
+    }
+  }

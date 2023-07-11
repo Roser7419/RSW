@@ -1,0 +1,27 @@
+{
+    "parent": "ltw:main/challenger6",
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_pickaxe",
+        "nbt": "{Enchantments:[{id:\"minecraft:efficiency\",lvl:7s}]}"
+      },
+      "title": {
+        "text": "VII · 全知"
+      },
+      "description": [
+        {"text": "完成 30 项挑战进度\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 4 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+        "a": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_adv_challenge":{"min":30}},"condition":"entity_scores","entity":"this"}]}}
+    }
+}

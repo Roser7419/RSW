@@ -1,0 +1,30 @@
+{
+    "parent": "ltw:main/challenger1",
+    "display": {
+      "icon": {
+        "item": "minecraft:stone_pickaxe"
+      },
+      "title": {
+        "text": "II · 挥洒"
+      },
+      "description": [
+        {"text": "完成 5 项挑战进度\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 绿宝石","color":"green"}
+      ],
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_2"
+    },
+    "criteria": {
+      "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_adv_challenge":{"min":1}},"condition":"entity_scores","entity":"this"}]}},
+      "02": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_adv_challenge":{"min":2}},"condition":"entity_scores","entity":"this"}]}},
+      "03": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_adv_challenge":{"min":3}},"condition":"entity_scores","entity":"this"}]}},
+      "04": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_adv_challenge":{"min":4}},"condition":"entity_scores","entity":"this"}]}},
+      "05": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_adv_challenge":{"min":5}},"condition":"entity_scores","entity":"this"}]}}
+    }
+  }

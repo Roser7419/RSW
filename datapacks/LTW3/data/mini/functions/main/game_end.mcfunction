@@ -31,14 +31,21 @@ tag @a[tag=!mini_rank1,tag=!mini_rank2,tag=!mini_rank3,team=playing] add mini_ra
 
 # 给予进度
 execute if score $mini_type mem matches 2 run advancement grant @a[tag=mini_rank1,scores={layer=2..}] only ltw:parkour/tnt1
-execute if score $mini_type mem matches 3 run advancement grant @a[tag=mini_rank1,scores={mini_heart=2..}] only ltw:vs/potato1
-execute if score $mini_type mem matches 3 run advancement grant @a[tag=mini_rank1,scores={mini_heart=3..}] only ltw:vs/potato2
-execute if score $mini_type mem matches 3 run advancement grant @a[tag=mini_rank1,scores={mini_heart=5..}] only ltw:vs/potato3
-execute if score $mini_type mem matches 4 if score #max_speed mem matches 1 run advancement grant @a[tag=mini_rank1,scores={mini_heart=2..}] only ltw:vs/colormatch2
-execute if score $mini_type mem matches 4 if score #max_speed mem matches 1 run advancement grant @a[tag=mini_rank1,tag=!colormatch_hurt] only ltw:vs/colormatch3
-execute if score $mini_type mem matches 201 run advancement grant @a[tag=mini_rank1,scores={health_disp=8..}] only ltw:blood/ass1
-execute if score $mini_type mem matches 201 if score $countdown mem matches 1.. run advancement grant @a[tag=mini_rank1] only ltw:blood/ass2
-execute if score $mini_type mem matches 201 run advancement grant @a[tag=mini_rank1,scores={health_disp=20..}] only ltw:blood/ass3
+execute if score $mini_type mem matches 2 run advancement grant @a[tag=mini_rank1,tag=tnt2finished,tag=tnt3finished,scores={layer=2..}] only ltw:parkour/tnt4
+execute if score $mini_type mem matches 3 run advancement grant @a[tag=mini_rank1,scores={mini_heart=2..}] only ltw:explode/potato1
+execute if score $mini_type mem matches 3 run advancement grant @a[tag=mini_rank1,scores={mini_heart=3..}] only ltw:explode/potato2
+execute if score $mini_type mem matches 3 run advancement grant @a[tag=mini_rank1,scores={mini_heart=5..}] only ltw:explode/potato3
+execute if score $mini_type mem matches 3 run advancement grant @a[tag=mini_rank1,scores={mini_heart=7..}] only ltw:explode/potato4
+execute if score $mini_type mem matches 4 if score #max_speed mem matches 1 run advancement grant @a[tag=mini_rank1,scores={mini_heart=2..}] only ltw:skilled/colormatch2
+execute if score $mini_type mem matches 4 if score #max_speed mem matches 1 run advancement grant @a[tag=mini_rank1,tag=!colormatch_hurt] only ltw:skilled/colormatch3
+execute if score $mini_type mem matches 6 run advancement grant @a[tag=mini_rank1,scores={health_disp=10..}] only ltw:explode/boomer1
+execute if score $mini_type mem matches 6 if score $countdown mem matches 1.. run advancement grant @a[tag=mini_rank1] only ltw:explode/boomer2
+execute if score $mini_type mem matches 6 run advancement grant @a[tag=mini_rank1,scores={health_disp=20..}] only ltw:explode/boomer3
+execute if score $mini_type mem matches 6 run advancement grant @a[tag=mini_rank1,x=2000,y=22,z=1000,dx=32,dy=16,dz=32] only ltw:explode/boomer4
+execute if score $mini_type mem matches 201 run advancement grant @a[tag=mini_rank1,scores={health_disp=8..}] only ltw:explode/ass1
+execute if score $mini_type mem matches 201 if score $countdown mem matches 1.. run advancement grant @a[tag=mini_rank1] only ltw:explode/ass2
+execute if score $mini_type mem matches 201 run advancement grant @a[tag=mini_rank1,scores={health_disp=20..}] only ltw:explode/ass3
+execute if score $mini_type mem matches 201 if score $countdown mem matches 30.. run advancement grant @a[tag=mini_rank1,scores={health_disp=20..}] only ltw:explode/ass4
 
 # 清理怪东西
 clear @a[team=!debugging] #mini:game_item{game_item:1b}

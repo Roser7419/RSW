@@ -1,0 +1,29 @@
+{
+    "parent": "ltw:main/score5",
+    "display": {
+      "icon": {
+        "item": "minecraft:flower_banner_pattern",
+        "nbt": "{Enchantments:[{id:\"minecraft:looting\",lvl:7s}]}"
+      },
+      "title": {
+        "text": "VI · 遨星间"
+      },
+      "description": [
+        {"text": "在单局游戏中达到 44 积分\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }

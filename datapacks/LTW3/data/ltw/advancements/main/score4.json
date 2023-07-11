@@ -1,0 +1,29 @@
+{
+    "parent": "ltw:main/score3",
+    "display": {
+      "icon": {
+        "item": "minecraft:map",
+        "nbt": "{Enchantments:[{id:\"minecraft:looting\",lvl:7s}]}"
+      },
+      "title": {
+        "text": "IV · 越鸿沟"
+      },
+      "description": [
+        {"text": "在单局游戏中达到 34 积分\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 绿宝石","color":"green"}
+      ],
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }

@@ -1,0 +1,28 @@
+{
+    "parent": "ltw:explode/potato3",
+    "display": {
+      "icon": {
+        "item": "minecraft:enchanted_golden_apple"
+      },
+      "title": {
+        "text": "君临天下 · Ω "
+      },
+      "description": [
+        {"text": "【炸弹狂魔】在剩余至少 7 颗心时获胜\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }

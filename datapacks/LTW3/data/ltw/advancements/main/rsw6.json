@@ -1,0 +1,29 @@
+{
+    "parent": "ltw:main/rsw5",
+    "display": {
+      "icon": {
+        "item": "minecraft:amethyst_block"
+      },
+      "title": {
+        "text": "VI · 绝"
+      },
+      "description": [
+        {"text": "完成 VI 列进度\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 6 紫水晶","color":"light_purple"}
+      ],
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_1"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:location","conditions": {"player":{"player":{"advancements":{
+            "ltw:main/score6":true,"ltw:main/win6":true,"ltw:main/challenger6":true}}}}
+      }
+    }
+  }

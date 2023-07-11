@@ -1,0 +1,29 @@
+{
+    "parent": "ltw:main/root",
+    "display": {
+      "icon": {
+        "item": "minecraft:small_amethyst_bud"
+      },
+      "title": {
+        "text": "I · 始"
+      },
+      "description": [
+        {"text": "完成 I 列进度\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 紫水晶","color":"light_purple"}
+      ],
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_1"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:location","conditions": {"player":{"player":{"advancements":{
+            "ltw:main/score1":true,"ltw:main/win1":true,"ltw:main/challenger1":true}}}}
+      }
+    }
+  }

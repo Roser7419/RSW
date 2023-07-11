@@ -9,8 +9,8 @@
     },
     "description": [
       {"text": "【地陷圣坛】从最底层返回最顶层\n", "color":"gray"},
-      {"text": "奖励: ","color":"green"},
-      {"text": "2 绿宝石","color":"white"}
+      {"text": "奖励:\n","color":"white"},
+      {"text": " 2 绿宝石","color":"green"}
     ],
     "frame": "task",
     "show_toast": true,
@@ -24,10 +24,5 @@
     "a":{
         "trigger": "minecraft:impossible"
     }
-  },
-  "requirements": [
-    [
-        "a"
-    ]
-  ]
+  }
 }

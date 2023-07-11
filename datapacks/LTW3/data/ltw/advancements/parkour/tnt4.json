@@ -1,0 +1,28 @@
+{
+    "parent": "ltw:parkour/tnt3",
+    "display": {
+      "icon": {
+        "item": "minecraft:magma_block"
+      },
+      "title": {
+        "text": "圣坛之主 · Ω "
+      },
+      "description": [
+        {"text": "【地陷圣坛】同时达成 αβγ 的三个条件\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }

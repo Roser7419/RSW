@@ -43,7 +43,7 @@ execute if score $foursec mem matches 1 run effect give @a[team=playing] regener
 execute if score $foursec mem matches 1 run schedule function mini:iron/game/clear_effect 1t replace
 
 # 给予进度
-advancement grant @a[team=playing,scores={iron_count=10..}] only ltw:blood/iron1
-advancement grant @a[team=playing,scores={iron_count=20..}] only ltw:blood/iron2
-advancement grant @a[team=playing,scores={iron_count=40..}] only ltw:blood/iron3
-advancement grant @a[team=playing,scores={iron_count=50..}] only ltw:blood/iron4
+advancement grant @a[team=playing,scores={iron_count=10..}] only ltw:survival/iron1
+advancement grant @a[team=playing,scores={iron_count=20..}] only ltw:survival/iron2
+advancement grant @a[team=playing,scores={iron_count=40..}] only ltw:survival/iron3
+advancement grant @a[team=playing,scores={iron_count=50..}] only ltw:survival/iron4

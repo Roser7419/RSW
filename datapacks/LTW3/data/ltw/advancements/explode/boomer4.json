@@ -1,0 +1,28 @@
+{
+    "parent": "ltw:explode/boomer3",
+    "display": {
+      "icon": {
+        "item": "minecraft:crying_obsidian"
+      },
+      "title": {
+        "text": "点燃引信 · Ω "
+      },
+      "description": [
+        {"text": "【爆裂纷争】获胜时位于最上层\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }

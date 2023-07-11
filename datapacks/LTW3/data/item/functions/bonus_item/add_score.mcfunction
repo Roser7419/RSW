@@ -19,7 +19,10 @@ execute if score #bonus_add_score mem matches ..-1 run scoreboard players set @s
 function item:refresh_level
 
 # 给予进度
-execute if entity @s[scores={total_score=10..}] run advancement grant @s only ltw:story/score1
-execute if entity @s[scores={total_score=18..}] run advancement grant @s only ltw:story/score2
-execute if entity @s[scores={total_score=26..}] run advancement grant @s only ltw:story/score3
-execute if entity @s[scores={total_score=34..}] run advancement grant @s only ltw:story/score4
+execute if entity @s[scores={total_score=10..}] run advancement grant @s only ltw:main/score1
+execute if entity @s[scores={total_score=20..}] run advancement grant @s only ltw:main/score2
+execute if entity @s[scores={total_score=27..}] run advancement grant @s only ltw:main/score3
+execute if entity @s[scores={total_score=34..}] run advancement grant @s only ltw:main/score4
+execute if entity @s[scores={total_score=40..}] run advancement grant @s only ltw:main/score5
+execute if entity @s[scores={total_score=44..}] run advancement grant @s only ltw:main/score6
+execute if entity @s[scores={total_score=48..}] run advancement grant @s only ltw:main/score7

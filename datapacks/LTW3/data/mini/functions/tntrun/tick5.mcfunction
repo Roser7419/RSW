@@ -10,3 +10,4 @@ execute as @a[tag=mini_running] run scoreboard players operation @s layer = @s t
 # 进度判断
 tag @a[scores={layer=1}] add layer_bottom
 advancement grant @a[tag=layer_bottom,tag=mini_running,scores={layer=4}] only ltw:parkour/tnt2
+tag @a[tag=layer_bottom,tag=mini_running,scores={layer=4}] add tnt2finished

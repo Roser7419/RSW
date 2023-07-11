@@ -36,3 +36,7 @@ bossbar set mini:red name "地板消失"
 # 更新地板方块
 scoreboard players operation $color_match_current mem = $color_match_floor mem
 execute as @a[team=!debugging] run function mini:colormatch/game/show_floor_block
+
+# 进度侦测
+scoreboard players add #round mem 1
+execute if score #round mem matches 70 run advancement grant @a[tag=mini_running,tag=!colormatch_hurt] only ltw:skilled/colormatch4

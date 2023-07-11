@@ -1,0 +1,29 @@
+{
+    "parent": "ltw:main/win1",
+    "display": {
+      "icon": {
+        "item": "minecraft:player_head",
+        "nbt": "{SkullOwner:{Id:[I;741804510,1514228031,-1792279280,-882649996],Properties:{textures:[{Value:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWRhNDgzNDljMDEwNDkyNTU2NzgzOWM4ZWQ5MTIwNjg4MzgwMzQ5MTE4YjUyNDNiMjU3OGExNjg3MmEzZmVmMyJ9fX0}]}}}"
+      },
+      "title": {
+        "text": "II · 日益精进"
+      },
+      "description": [
+        {"text": "获得 3 场游戏的胜利\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 绿宝石","color":"green"}
+      ],
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_2"
+    },
+    "criteria": {
+      "01": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":1}},"condition":"entity_scores","entity":"this"}]}},
+      "02": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":2}},"condition":"entity_scores","entity":"this"}]}},
+      "03": {"trigger":"minecraft:location","conditions":{"player":[{"scores":{"stat_win":{"min":3}},"condition":"entity_scores","entity":"this"}]}}
+    }
+  }
