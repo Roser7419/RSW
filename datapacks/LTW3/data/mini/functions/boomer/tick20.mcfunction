@@ -3,6 +3,7 @@
 execute if score $countdown mem matches 30 run tellraw @a[team=playing,scores={green_total=..10}] [{"text":"\n>> ","color":"light_purple","bold": true},{"text":"提示：边界最终会汇于中心, 不要离得太远！","bold":false},"\n"]
 
 # 边界收缩
+bossbar set mini:green name ["剩余时间 » ",{"score":{"objective":"mem","name":"$countdown"},"color":"green"}]
 execute if score $countdown mem matches 21 run tellraw @a ["",{"text": ">> ","color": "gold","bold": true},{"text": "边界将在 20 秒后收缩！","color": "gold"}]
 execute if score $countdown mem matches 1 run scoreboard players set $bossbar_color mem 1
 execute if score $countdown mem matches 1 run function lib:bossbar/show

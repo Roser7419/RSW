@@ -9,7 +9,7 @@ scoreboard players set $bossbar_color mem 3
 scoreboard players set $countdown_max mem 70
 scoreboard players set $bossbar_type mem 2
 function lib:bossbar/show
-bossbar set mini:green name "剩余时间"
+bossbar set mini:green name ["剩余时间 » ",{"score":{"objective":"mem","name":"$countdown"},"color":"green"}]
 bossbar set mini:red name "边界缩小"
 
 # 边界设置

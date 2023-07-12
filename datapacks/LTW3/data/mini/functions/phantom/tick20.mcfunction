@@ -1,3 +1,4 @@
+bossbar set mini:blue name ["剩余时间 » ",{"score":{"objective":"mem","name":"$countdown"},"color":"aqua"}]
 
 # 60s：教学
 execute if score $countdown mem matches 60 run tellraw @a[team=playing,scores={green_total=..10}] [{"text":"\n>> ","color":"light_purple","bold": true},{"text":"提示：如果有近战武器, 或许可以冲进幻翼群里直接近战……","bold":false},"\n"]

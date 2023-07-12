@@ -31,7 +31,7 @@ scoreboard players set $bossbar_color mem 1
 scoreboard players operation $countdown_max mem = $countdown_fast mem
 scoreboard players set $bossbar_type mem 1
 function lib:bossbar/show
-bossbar set mini:red name "地板消失"
+bossbar set mini:red name ["地板消失 » 第 ",{"score":{"objective":"mem","name":"#round"},"color":"blue"}," 回合"]
 
 # 更新地板方块
 scoreboard players operation $color_match_current mem = $color_match_floor mem

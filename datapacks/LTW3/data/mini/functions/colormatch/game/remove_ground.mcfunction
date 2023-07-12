@@ -19,7 +19,7 @@ scoreboard players set $bossbar_color mem 3
 scoreboard players operation $countdown_max mem = $countdown_fast mem
 scoreboard players set $bossbar_type mem 1
 function lib:bossbar/show
-bossbar set mini:green name "下一轮"
+bossbar set mini:green name ["下一回合 » 第 ",{"score":{"objective":"mem","name":"#round"},"color":"blue"}," 回合"]
 
 # 预备下一轮
 function mini:colormatch/game/prepare_round

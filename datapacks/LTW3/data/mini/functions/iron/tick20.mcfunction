@@ -1,6 +1,9 @@
 xp set @a 0 points
 
 # 显示倒计时
+bossbar set mini:red name ["剩余时间 » ",{"score":{"objective":"mem","name":"$countdown"},"color":"red"}]
+bossbar set mini:yellow name ["剩余时间 » ",{"score":{"objective":"mem","name":"$countdown"},"color":"yellow"}]
+bossbar set mini:blue name ["剩余时间 » ",{"score":{"objective":"mem","name":"$countdown"},"color":"aqua"}]
 execute if score $countdown mem matches ..10 run title @a times 3 14 2
 execute if score $countdown mem matches ..10 run title @a subtitle {"score":{"name":"$countdown","objective":"mem"}}
 execute if score $countdown mem matches ..10 run title @a title [""]
