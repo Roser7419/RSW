@@ -4,7 +4,7 @@ title @s actionbar ""
 
 # 状态效果
 effect clear @s
-effect give @s saturation 1000000 0 true
+effect give @s saturation infinite 0 true
 gamerule naturalRegeneration true
 
 # 显示小游戏介绍

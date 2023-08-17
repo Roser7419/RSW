@@ -1,7 +1,7 @@
 {
-  "replace": false,
   "values": [
     "#minecraft:wooden_slabs",
+    "minecraft:bamboo_mosaic_slab",
     "minecraft:stone_slab",
     "minecraft:smooth_stone_slab",
     "minecraft:stone_brick_slab",
@@ -45,6 +45,7 @@
     "minecraft:weathered_cut_copper_slab",
     "minecraft:exposed_cut_copper_slab",
     "minecraft:cut_copper_slab",
-    "minecraft:waxed_oxidized_cut_copper_slab"
+    "minecraft:waxed_oxidized_cut_copper_slab",
+    "minecraft:mud_brick_slab"
   ]
 }

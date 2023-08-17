@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "minecraft:acacia_trapdoor",
     "minecraft:birch_trapdoor",
@@ -8,6 +7,9 @@
     "minecraft:oak_trapdoor",
     "minecraft:spruce_trapdoor",
     "minecraft:crimson_trapdoor",
-    "minecraft:warped_trapdoor"
+    "minecraft:warped_trapdoor",
+    "minecraft:mangrove_trapdoor",
+    "minecraft:bamboo_trapdoor",
+    "minecraft:cherry_trapdoor"
   ]
 }

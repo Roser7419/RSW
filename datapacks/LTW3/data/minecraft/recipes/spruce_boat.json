@@ -1,16 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "group": "boat",
-  "pattern": [
-    "# #",
-    "###"
-  ],
   "key": {
     "#": {
       "item": "minecraft:spruce_planks"
     }
   },
+  "pattern": [
+    "# #",
+    "###"
+  ],
   "result": {
     "item": "minecraft:spruce_boat"
-  }
+  },
+  "show_notification": true
 }

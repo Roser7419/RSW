@@ -2,7 +2,7 @@
 
 scoreboard players add @s purple 0
 scoreboard players add @s purple_total 0
-clear @s amethyst_shard
+clear @s amethyst_block
 clear @s amethyst_shard
 
 # 获取紫水晶块数, 存于 temp

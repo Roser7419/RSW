@@ -1,0 +1,28 @@
+{
+    "parent": "ltw:survival/collect3",
+    "display": {
+      "icon": {
+        "item": "minecraft:bedrock"
+      },
+      "title": {
+        "text": "万物俱备 · Ω "
+      },
+      "description": [
+        {"text": "【集物纪行】达到 50 集物积分\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 紫水晶","color":"light_purple"}
+      ],
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_4"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }

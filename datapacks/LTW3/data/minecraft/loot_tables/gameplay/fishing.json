@@ -2,37 +2,41 @@
   "type": "minecraft:fishing",
   "pools": [
     {
-      "rolls": 1.0,
+      "bonus_rolls": 0.0,
       "entries": [
-        
         {
           "type": "minecraft:loot_table",
-          "weight": 1,
-          "name": "item:item/white"
+          "name": "minecraft:gameplay/fishing/junk",
+          "quality": -2,
+          "weight": 10
         },
         {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:nether_star",
-          "functions": [
-              {
-                  "function": "minecraft:set_nbt",
-                  "tag": "{item_name:'{\"text\":\"1 积分\",\"color\":\"white\"}',is_bonus:1b,bonus_new:1b,bonus_add_score:1}"
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type_specific": {
+                  "type": "fishing_hook",
+                  "in_open_water": true
+                }
               }
-          ]
+            }
+          ],
+          "name": "minecraft:gameplay/fishing/treasure",
+          "quality": 2,
+          "weight": 5
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 2,
-          "name": "item:item/green"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "name": "item:item/blue"
+          "name": "minecraft:gameplay/fishing/fish",
+          "quality": -1,
+          "weight": 85
         }
-
-      ]
+      ],
+      "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "minecraft:gameplay/fishing"
 }

@@ -8,3 +8,4 @@ execute if score $mini_type mem matches 6 run function mini:boomer/watcher_limit
 execute if score $mini_type mem matches 201 run function mini:ass/watcher_limit
 execute if score $mini_type mem matches 101 run function mini:iron/watcher_limit
 execute if score $mini_type mem matches 102 run function mini:trade/watcher_limit
+execute if score $mini_type mem matches 103 run function mini:collect/watcher_limit

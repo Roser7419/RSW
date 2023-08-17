@@ -1,15 +1,35 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "MMM",
-    "MMM",
-    "MMM"
-  ],
-  "key": {
-    "M": {
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
+      "item": "minecraft:melon_slice"
+    },
+    {
       "item": "minecraft:melon_slice"
     }
-  },
+  ],
   "result": {
     "item": "minecraft:melon"
   }

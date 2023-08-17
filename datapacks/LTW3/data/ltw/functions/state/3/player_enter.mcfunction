@@ -10,8 +10,8 @@ execute if score $round mem matches 5 run title @s title {"text":"最终轮","co
 
 # 状态效果
 effect clear @s
-effect give @s saturation 1000000 0 true
-effect give @s blindness 1000000 0 true
+effect give @s saturation infinite 0 true
+effect give @s blindness infinite 0 true
 
 # 音效
 execute at @s run function lib:sounds/levelup

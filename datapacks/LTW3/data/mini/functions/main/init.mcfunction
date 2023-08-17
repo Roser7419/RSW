@@ -6,6 +6,7 @@ function mini:iron/init
 function mini:ass/init
 function mini:trade/init
 function mini:boomer/init
+function mini:collect/init
 
 # 计分板初始化
 scoreboard objectives remove mini_score

@@ -21,9 +21,20 @@
       "function": "ltw:advancement/rsw_4"
     },
     "criteria": {
-      "a":{
-          "trigger": "minecraft:location","conditions": {"player":{"player":{"advancements":{
-            "ltw:main/score4":true,"ltw:main/win4":true,"ltw:main/challenger4":true}}}}
+      "a": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player",
+              "advancements": {
+                "ltw:main/challenger4": true,
+                "ltw:main/score4": true,
+                "ltw:main/win4": true
+              }
+            }
+          }
+        }
       }
     }
   }

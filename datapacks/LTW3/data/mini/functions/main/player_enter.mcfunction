@@ -20,3 +20,4 @@ execute if score $mini_type mem matches 6 run function mini:boomer/player_enter
 execute if score $mini_type mem matches 201 run function mini:ass/player_enter
 execute if score $mini_type mem matches 101 run function mini:iron/player_enter
 execute if score $mini_type mem matches 102 run function mini:trade/player_enter
+execute if score $mini_type mem matches 103 run function mini:collect/player_enter

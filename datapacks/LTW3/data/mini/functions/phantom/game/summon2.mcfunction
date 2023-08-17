@@ -19,7 +19,7 @@ execute if score #new_item mem matches 0 run scoreboard players set $new_item_cd
 
 # 修改奖励幻翼的属性
 team join red @e[tag=bonus_phantom,tag=new_phantom,limit=1]
-effect give @e[tag=bonus_phantom,tag=new_phantom,limit=1] glowing 1000000 0 true
+effect give @e[tag=bonus_phantom,tag=new_phantom,limit=1] glowing infinite 0 true
 data merge entity @e[tag=bonus_phantom,tag=new_phantom,limit=1] {Size:7,DeathLootTable:"mini:phantom"}
 attribute @e[tag=bonus_phantom,tag=new_phantom,limit=1] generic.attack_damage base set 9
 attribute @e[tag=bonus_phantom,tag=new_phantom,limit=1] generic.max_health base set 20

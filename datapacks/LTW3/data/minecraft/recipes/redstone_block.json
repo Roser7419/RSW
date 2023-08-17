@@ -1,16 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
+  "category": "redstone",
   "key": {
     "#": {
       "item": "minecraft:redstone"
     }
   },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
   "result": {
     "item": "minecraft:redstone_block"
-  }
+  },
+  "show_notification": true
 }

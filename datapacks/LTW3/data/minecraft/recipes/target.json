@@ -1,10 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " R ",
-    "RHR",
-    " R "
-  ],
+  "category": "redstone",
   "key": {
     "H": {
       "item": "minecraft:hay_block"
@@ -13,7 +9,13 @@
       "item": "minecraft:redstone"
     }
   },
+  "pattern": [
+    " R ",
+    "RHR",
+    " R "
+  ],
   "result": {
     "item": "minecraft:target"
-  }
+  },
+  "show_notification": true
 }

@@ -12,7 +12,7 @@ execute if score $countdown mem matches 1 as @a at @s run function lib:sounds/dr
 execute if score $countdown mem matches 1 if score $player_alive mem matches 3.. run effect clear @a resistance
 execute if score $countdown mem matches 1 if score $player_alive mem matches ..2 run tellraw @a ["\n",{"text": ">> ","color": "gold","bold": true},{"text": "强制死亡已开启！\n","color": "gold"}]
 execute if score $countdown mem matches 1 if score $player_alive mem matches 3.. run tellraw @a ["\n",{"text": ">> ","color": "gold","bold": true},{"text": "强制死亡已开启！苦力怕现在会造成更多伤害！\n","color": "gold"}]
-execute if score $countdown mem matches ..0 run effect give @a[team=playing] wither 1000000 1 true
+execute if score $countdown mem matches ..0 run effect give @a[team=playing] wither infinite 1 true
 
 # 回复生命值
 execute if score $countdown mem matches 1.. if score $foursec mem matches 1 if score $foursec mem matches 1 run effect give @a[team=playing] regeneration 1 10 true

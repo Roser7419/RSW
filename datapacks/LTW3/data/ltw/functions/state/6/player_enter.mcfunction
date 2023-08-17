@@ -13,9 +13,9 @@ attribute @s generic.max_health base set 20
 
 # 状态效果
 effect clear @s
-effect give @s saturation 1000000 0 true
+effect give @s saturation infinite 0 true
 gamerule naturalRegeneration true
-effect give @s night_vision 1000000 0 true
+effect give @s night_vision infinite 0 true
 
 # 显示小游戏结果
 function mini:main/show_result

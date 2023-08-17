@@ -21,9 +21,20 @@
       "function": "ltw:advancement/rsw_2"
     },
     "criteria": {
-      "a":{
-          "trigger": "minecraft:location","conditions": {"player":{"player":{"advancements":{
-            "ltw:main/score2":true,"ltw:main/win2":true,"ltw:main/challenger2":true}}}}
+      "a": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player",
+              "advancements": {
+                "ltw:main/challenger2": true,
+                "ltw:main/score2": true,
+                "ltw:main/win2": true
+              }
+            }
+          }
+        }
       }
     }
   }

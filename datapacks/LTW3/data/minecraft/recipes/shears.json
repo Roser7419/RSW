@@ -1,15 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " #",
-    "# "
-  ],
+  "category": "equipment",
   "key": {
     "#": {
       "item": "minecraft:iron_ingot"
     }
   },
+  "pattern": [
+    " #",
+    "# "
+  ],
   "result": {
     "item": "minecraft:shears"
-  }
+  },
+  "show_notification": true
 }

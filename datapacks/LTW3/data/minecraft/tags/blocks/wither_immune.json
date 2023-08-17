@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "minecraft:barrier",
     "minecraft:bedrock",
@@ -11,6 +10,8 @@
     "minecraft:chain_command_block",
     "minecraft:structure_block",
     "minecraft:jigsaw",
-    "minecraft:moving_piston"
+    "minecraft:moving_piston",
+    "minecraft:light",
+    "minecraft:reinforced_deepslate"
   ]
 }

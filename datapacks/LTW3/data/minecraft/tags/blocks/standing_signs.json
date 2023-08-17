@@ -1,5 +1,4 @@
 {
-  "replace": false,
   "values": [
     "minecraft:oak_sign",
     "minecraft:spruce_sign",
@@ -8,6 +7,9 @@
     "minecraft:jungle_sign",
     "minecraft:dark_oak_sign",
     "minecraft:crimson_sign",
-    "minecraft:warped_sign"
+    "minecraft:warped_sign",
+    "minecraft:mangrove_sign",
+    "minecraft:bamboo_sign",
+    "minecraft:cherry_sign"
   ]
 }

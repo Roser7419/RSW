@@ -1,0 +1,28 @@
+{
+    "parent": "ltw:survival/collect1",
+    "display": {
+      "icon": {
+        "item": "minecraft:stone"
+      },
+      "title": {
+        "text": "万物俱备 · β "
+      },
+      "description": [
+        {"text": "【集物纪行】达成红色级别的目标\n", "color":"gray"},
+        {"text": "奖励:\n","color":"white"},
+        {"text": " 2 绿宝石","color":"green"}
+      ],
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "ltw:advancement/bonus_2"
+    },
+    "criteria": {
+      "a":{
+          "trigger": "minecraft:impossible"
+      }
+    }
+  }
